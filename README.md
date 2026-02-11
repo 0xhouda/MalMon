@@ -76,7 +76,7 @@ malmon exe C:\path\to\sample.exe --out MyRun_01 --duration 60
 malmon exe "C:\path\to\sample.exe" --duration 30 --out "MalMon_output" --out-html
 
 # pass arguments to the target (use -- to force pass-through)
-malmon exe "C:\path\to\sample.exe" -- --arg1 value1 --flag --duration 60 --out "MalMon_output" --out-html
+malmon exe "C:\path\to\sample.exe" --duration 60 --out "MalMon_output" --out-html -- --arg1 value1 --arg2
 
 # 2) Analyze an Office document (Word/Excel/PowerPoint)
 malmon office "C:\path\to\document.docx" --duration 45 --out "MalMon_output" --out-html
@@ -91,3 +91,13 @@ malmon exe C:\Windows\System32\rundll32.exe "C:\path\to\sample.dll",Run --durati
 malmon wait --image rundll32.exe --cmd-contains sample.dll --duration 30 --out "MalMon_output" --out-html
 
 ```
+
+
+---
+
+## Support ⭐ && Feedback
+If MalMon helped you during triage or analysis, please leave a ⭐ on the repo.
+
+## Contact
+Have an issue, Suggestions, improvements:
+LinkedIn: https://www.linkedin.com/in/0xHouda/
